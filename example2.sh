@@ -1,3 +1,8 @@
-#!/bin/bash
-name="Anirudh"
-echo "My name is $name"
+#!/usr/bin/env bash
+
+if [[ -n $1 ]]; then
+	name=$1
+else
+	read -p 'enter the name: ' name
+fi
+echo "hello $name"
